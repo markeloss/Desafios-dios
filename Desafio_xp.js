@@ -1,5 +1,7 @@
+// Desafio de Experiencia 
+
 let nome = "Erique"
-let experiencia = 1.002
+let experiencia = 10.502
 
 if ( experiencia < 1.000) {
     experiencia = "Ferro"
