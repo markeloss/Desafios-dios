@@ -8,25 +8,26 @@ class Heroi {
     atacar() {
         let ataque;
         switch (this.tipo) {
-            case 'mago':
-                ataque = 'usou magia';
+            case "mago":
+                ataque = "usou magia";
                 break;
-            case 'guerreiro':
-                ataque = 'usou espada';
+            case "guerreiro":
+                ataque = "usou espada";
                 break;
-            case 'monge':
-                ataque = 'usou artes marciais';
+            case "monge":
+                ataque = "usou artes marciais";
                 break;
-            case 'ninja':
-                ataque = 'usou shuriken';
+            case "ninja":
+                ataque = "usou shuriken";
                 break;
             default:
-                ataque = 'usou um ataque desconhecido';
+                ataque = "usou um ataque desconhecido";
         }
-        console.log(`O ${this.tipo} atacou usando ${ataque}`);
+        console.log(`O ${this.nome} ${this.tipo} atacou usando ${ataque}`);
     }
 }
 
-const meuHeroi = new Heroi('Gandalf', 100, 'monge');
+const meuHeroi = new Heroi("Lee sin", 100, "monge");
 meuHeroi.atacar();
+
 
